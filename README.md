@@ -1,61 +1,68 @@
-<a href="https://chat.vercel.ai/">
-  <img alt="Next.js 14 and App Router-ready AI chatbot." src="app/(chat)/opengraph-image.png">
-  <h1 align="center">Next.js AI Chatbot</h1>
-</a>
+---
+description: >-
+  A high-level overview of the Dexterity AMM protocol and its significance in
+  DeFi.
+cover: .gitbook/assets/github-banner.png
+coverY: 0
+---
 
-<p align="center">
-  An Open-Source AI Chatbot Template Built With Next.js and the AI SDK by Vercel.
-</p>
+# Introduction
 
-<p align="center">
-  <a href="#features"><strong>Features</strong></a> ·
-  <a href="#model-providers"><strong>Model Providers</strong></a> ·
-  <a href="#deploy-your-own"><strong>Deploy Your Own</strong></a> ·
-  <a href="#running-locally"><strong>Running locally</strong></a>
-</p>
-<br/>
+## Welcome to Dexterity
 
-## Features
+Dexterity is a permissionless liquidity protocol built on Stacks, designed to revolutionize how we think about trading and market making in decentralized finance. At its core, Dexterity enables anyone to create, provide, and access liquidity without any intermediaries or protocol fees.
 
-- [Next.js](https://nextjs.org) App Router
-  - Advanced routing for seamless navigation and performance
-  - React Server Components (RSCs) and Server Actions for server-side rendering and increased performance
-- [AI SDK](https://sdk.vercel.ai/docs)
-  - Unified API for generating text, structured objects, and tool calls with LLMs
-  - Hooks for building dynamic chat and generative user interfaces
-  - Supports OpenAI (default), Anthropic, Cohere, and other model providers
-- [shadcn/ui](https://ui.shadcn.com)
-  - Styling with [Tailwind CSS](https://tailwindcss.com)
-  - Component primitives from [Radix UI](https://radix-ui.com) for accessibility and flexibility
-- Data Persistence
-  - [Vercel Postgres powered by Neon](https://vercel.com/storage/postgres) for saving chat history and user data
-  - [Vercel Blob](https://vercel.com/storage/blob) for efficient file storage
-- [NextAuth.js](https://github.com/nextauthjs/next-auth)
-  - Simple and secure authentication
+### Why Decentralized Liquidity Matters
 
-## Model Providers
+In both traditional finance and current DeFi, market making and liquidity provision are controlled by a small number of powerful intermediaries. These gatekeepers determine who can participate, set the rules of engagement, and extract significant value from market participants. This centralization creates inefficiencies, increases costs and security risks, and limits access to financial services.
 
-This template ships with OpenAI `gpt-4o` as the default. However, with the [AI SDK](https://sdk.vercel.ai/docs), you can switch LLM providers to [OpenAI](https://openai.com), [Anthropic](https://anthropic.com), [Cohere](https://cohere.com/), and [many more](https://sdk.vercel.ai/providers/ai-sdk-providers) with just a few lines of code.
+Dexterity changes this paradigm by making liquidity provision truly permissionless and democratic. Anyone can:
 
-## Deploy Your Own
+* Create new trading pairs
+* Provide liquidity to earn fees
+* Access deep liquidity for trading
+* Build applications on top of the protocol
 
-You can deploy your own version of the Next.js AI Chatbot to Vercel with one click:
+This openness isn't just about fairness—it's about unleashing the full potential of market efficiency. When barriers to entry are removed and market making becomes permissionless and free of protocol fees, we see:
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fvercel%2Fai-chatbot&env=AUTH_SECRET,OPENAI_API_KEY&envDescription=Learn%20more%20about%20how%20to%20get%20the%20API%20Keys%20for%20the%20application&envLink=https%3A%2F%2Fgithub.com%2Fvercel%2Fai-chatbot%2Fblob%2Fmain%2F.env.example&demo-title=AI%20Chatbot&demo-description=An%20Open-Source%20AI%20Chatbot%20Template%20Built%20With%20Next.js%20and%20the%20AI%20SDK%20by%20Vercel.&demo-url=https%3A%2F%2Fchat.vercel.ai&stores=[{%22type%22:%22postgres%22},{%22type%22:%22blob%22}])
+* More efficient price discovery
+* Reduced trading costs
+* Greater market depth
+* Increased innovation in financial products
 
-## Running locally
+### The Power of Isolated Vaults
 
-You will need to use the environment variables [defined in `.env.example`](.env.example) to run Next.js AI Chatbot. It's recommended you use [Vercel Environment Variables](https://vercel.com/docs/projects/environment-variables) for this, but a `.env` file is all that is necessary.
+What makes Dexterity unique is its isolated vault system. Unlike traditional AMM protocols that pool all liquidity together, Dexterity creates independent vaults for each trading pair. This architecture brings several powerful advantages:
 
-> Note: You should not commit your `.env` file or it will expose secrets that will allow others to control access to your various OpenAI and authentication provider accounts.
+* **Enhanced Security**: Each vault operates independently, limiting the impact of potential issues to a single pool
+* **Flexible Configuration**: Trading pairs can be optimized for their specific needs
+* **Simplified Auditing**: Isolated contracts are easier to verify and audit
+* **Reduced Systemic Risk**: Problems in one pool cannot cascade through the entire protocol
 
-1. Install Vercel CLI: `npm i -g vercel`
-2. Link local instance with Vercel and GitHub accounts (creates `.vercel` directory): `vercel link`
-3. Download your environment variables: `vercel env pull`
+### Built for Builders
 
-```bash
-pnpm install
-pnpm dev
-```
+Dexterity isn't just a trading protocol—it's a platform for financial innovation. We provide powerful tools for developers:
 
-Your app template should now be running on [localhost:3000](http://localhost:3000/).
+* **Flexible Opcode System**: A sophisticated operation code system for fine-grained control over trading behavior
+* **Comprehensive SDK**: Everything needed to integrate Dexterity into your applications
+* **Advanced Router**: Efficient path-finding for optimal trading across multiple pools
+* **Developer-First Design**: Built by developers, for developers
+
+### Getting Started
+
+Whether you're a trader, liquidity provider, or developer, Dexterity offers multiple ways to get involved:
+
+* **Traders**: Start trading with lower fees and better prices
+* **Liquidity Providers**: Earn fees by providing liquidity to pools
+* **Developers**: Build new applications using our SDK and tools
+* **Market Makers**: Create and manage automated market making strategies
+
+### Join the Revolution
+
+Decentralized finance is about more than just technology—it's about creating a more open and accessible financial system for everyone. Dexterity is our contribution to this vision, providing the infrastructure needed for truly permissionless liquidity.
+
+Ready to dive in? The following sections will guide you through everything you need to know about using and building with Dexterity.
+
+***
+
+_Next: Core Concepts - Learn about the fundamental principles behind Dexterity's design._
